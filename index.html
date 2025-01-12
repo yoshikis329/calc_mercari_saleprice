@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>メルカリ販売価格計算ツール</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <input type="text" id="profit" placeholder="欲しい利益を入力してください">
+    <p>発送方法を選択してください。</p>
+    <select name="発送方法" id="shipway">
+        <option value="nekopos">ネコポス（ヤマト）</option>
+        <option value="compact">宅急便コンパクト（ヤマト）</option>
+        <option value="yamato60">ヤマト60サイズ</option>
+        <option value="yamato80">ヤマト80サイズ</option>
+        <option value="yamato100">ヤマト100サイズ</option>
+        <option value="yamato120">ヤマト120サイズ</option>
+        <option value="yamato140">ヤマト140サイズ</option>
+        <option value="yamato160">ヤマト160サイズ</option>
+        <option value="yamato170">ヤマト170サイズ</option>
+        <option value="yamato180">ヤマト180サイズ</option>
+        <option value="yamato200">ヤマト200サイズ</option>
+        <option value="mini">ゆうパケットポストmini</option>
+        <option value="post">ゆうパケットポスト</option>
+        <option value="packet">ゆうパケット</option>
+        <option value="packetplus">ゆうパケットプラス</option>
+        <option value="yupack60">ゆうパック60サイズ</option>
+        <option value="yupack80">ゆうパック80サイズ</option>
+        <option value="yupack100">ゆうパック100サイズ</option>
+        <option value="yupack120">ゆうパック120サイズ</option>
+        <option value="yupack140">ゆうパック140サイズ</option>
+        <option value="yupack160">ゆうパック160サイズ</option>
+        <option value="yupack170">ゆうパック170サイズ</option>
+        <option value="yupack180">ゆうパック180サイズ</option>
+        <option value="yupack200">ゆうパック200サイズ</option>
+    </select>
+    <button onclick="calc()">計算</button>
+    <div id="result"></div>
+</body>
+</html>
